@@ -2,14 +2,14 @@ package J04009;
 
 public class Point {
     private double x, y;
-    private Point p;
+    // private Point p;
     public Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
-    public Point(Point p) {
-        this.p = p;
-    }
+    // public Point(Point p) {
+    //     this.p = p;
+    // }
     public Point() {
     }
     public double getX() {
