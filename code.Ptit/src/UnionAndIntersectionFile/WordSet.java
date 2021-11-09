@@ -30,36 +30,37 @@ public class WordSet {
         return result.trim();
     }
     public String intersection(WordSet s) throws FileNotFoundException{
-        TreeMap<String,Integer> tree = new TreeMap<>();
-        Scanner sc = new Scanner(new File(filename));
-        while(sc.hasNext()){
-            String item = sc.next().toLowerCase();
-            if(tree.get(item) == null){
-                tree.put(item,1);
-            }
-            else{
-                tree.put(item,tree.get(item) + 1);
-            }
-        }
-        sc.close();
-        sc = new Scanner(new File(s.filename));
-        while(sc.hasNext()){
-            String item = sc.next().toLowerCase();
-            if(tree.get(item) == null){
-                tree.put(item,1);
-            }
-            else{
-                tree.put(item,tree.get(item) + 1);
-            }
-        }
-        sc.close();
-        String result = "";
-        for(String key : tree.keySet()){
-            if(tree.get(key) >= 2){
-                result += (key + " ");
-            }
-        }
-        return result.trim();
+        // TreeMap<String,Integer> tree = new TreeMap<>();
+        // Scanner sc = new Scanner(new File(filename));
+        // while(sc.hasNext()){
+        //     String item = sc.next().toLowerCase();
+        //     if(tree.get(item) == null){
+        //         tree.put(item,1);
+        //     }
+        //     else{
+        //         tree.put(item,tree.get(item) + 1);
+        //     }
+        // }
+        // sc.close();
+        // sc = new Scanner(new File(s.filename));
+        // while(sc.hasNext()){
+        //     String item = sc.next().toLowerCase();
+        //     if(tree.get(item) == null){
+        //         tree.put(item,1);
+        //     }
+        //     else{
+        //         tree.put(item,tree.get(item) + 1);
+        //     }
+        // }
+        // sc.close();
+        // String result = "";
+        // for(String key : tree.keySet()){
+        //     if(tree.get(key) >= 2){
+        //         result += (key + " ");
+        //     }
+        // }
+        // return result.trim();
+        return null;
     }
 }
 
